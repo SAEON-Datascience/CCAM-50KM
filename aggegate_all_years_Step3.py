@@ -5,7 +5,6 @@ Created on Wed Sep 25 13:28:28 2019
 @author: KeneilweH
 """
 
-
 import netCDF4
 import numpy as np
 import os
@@ -32,7 +31,6 @@ lon_dim_len = len(datasets[0]['lon'])
 #creating an empty np array of zeros
 t_sum = np.zeros([lat_dim_len, lon_dim_len])
 
-
 #calculate the mean/sum
 for i, dataset in enumerate(datasets, 1):
     #append to rnd24_aggregate
@@ -44,7 +42,6 @@ for i, dataset in enumerate(datasets, 1):
   
 t_mean_annual = t_sum /20
 print(t_mean_annual)
-
 
     #### Create output netcdf ####
 output_file = '1946_2065_annual_temp.nc' 
