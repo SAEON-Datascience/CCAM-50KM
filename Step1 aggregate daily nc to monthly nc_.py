@@ -2,10 +2,8 @@ import netCDF4
 import numpy as np
 import os
 
-
 curr_dir_files = os.listdir('C:/Users/KeneilweH/Desktop/CCSM4_RCP45/Climate_models_1983_2005/2005/')
 #wdir='C:/Users/KeneilweH/Desktop/ACCESS_RCP85'
-
 
 input_files = []
 for f in curr_dir_files:
